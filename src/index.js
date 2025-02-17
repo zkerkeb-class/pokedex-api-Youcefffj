@@ -35,6 +35,13 @@ app.get("/api/pokemons", (req, res) => {
   });
 });
 
+// Route Get les images type
+app.get("/api/pokemons/Types", (req, res) => {
+  res.status(200).send({
+    Types: TypeList,
+  });
+});
+
 // Route GET pour un pokémon spécifique
 app.get("/api/pokemons/:id", (req, res) => {
   const pokemon = pokemonsList.find((pokemon) => pokemon.id === parseInt(req.params.id));
