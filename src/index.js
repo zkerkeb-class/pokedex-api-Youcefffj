@@ -11,6 +11,7 @@ dotenv.config();
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const pokemonsList = JSON.parse(fs.readFileSync(path.join(__dirname, './data/pokemons.json'), 'utf8'));
+const typesList = JSON.parse(fs.readFileSync(path.join(__dirname, './data/types.json'), 'utf8'));
 
 const app = express();
 const PORT = 3000;
@@ -36,9 +37,10 @@ app.get("/api/pokemons", (req, res) => {
 });
 
 // Route Get les images type
-app.get("/api/pokemons/Types", (req, res) => {
+app.get("/api/types/", (req, res) => {
   res.status(200).send({
-    Types: TypeList,
+    status: 200,
+    types: typesList.types
   });
 });
 
