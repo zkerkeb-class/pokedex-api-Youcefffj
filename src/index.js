@@ -4,6 +4,7 @@ import fs from 'fs';
 import path from "path";
 import { fileURLToPath } from "url";
 import dotenv from "dotenv";
+import mongoose from "mongoose";
 
 dotenv.config();
 
@@ -18,9 +19,17 @@ const PORT = 3000;
 
 // Middleware pour CORS
 app.use(cors());
-
 // Middleware pour parser le JSON
 app.use(express.json());
+
+// Connexion à la base de données MongoDB
+mongoose.connect(process.env.MONGODB_URI, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+  useFindAndModify: false,
+}).then(() => { console.log("Connexion à la base de données réussie"); })
+  .catch((err) => { console.log("Erreur de connexion à la base de données", err); });
+
 
 // Middleware pour servir des fichiers statiques
 // 'app.use' est utilisé pour ajouter un middleware à notre application Express
