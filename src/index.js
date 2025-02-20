@@ -5,6 +5,8 @@ import path from "path";
 import { fileURLToPath } from "url";
 import dotenv from "dotenv";
 import mongoose from "mongoose";
+import Pokemon from "./models/PokemonSchema.js";
+
 
 dotenv.config();
 
@@ -23,11 +25,8 @@ app.use(cors());
 app.use(express.json());
 
 // Connexion à la base de données MongoDB
-mongoose.connect(process.env.MONGODB_URI, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-  useFindAndModify: false,
-}).then(() => { console.log("Connexion à la base de données réussie"); })
+mongoose.connect(process.env.MONGODB_URI)
+  .then(() => { console.log("Connexion à la base de données réussie"); })
   .catch((err) => { console.log("Erreur de connexion à la base de données", err); });
 
 
@@ -38,14 +37,28 @@ mongoose.connect(process.env.MONGODB_URI, {
 // 'path.join(__dirname, '../assets')' construit le chemin absolu vers le dossier 'assets'
 app.use("/assets", express.static(path.join(__dirname, "../assets")));
 
-// Route GET de base
+
+/*// Route GET de base JSON
 app.get("/api/pokemons", (req, res) => {
   res.status(200).send({
     pokemons: pokemonsList,
   });
 });
+*/
+// Route GET de base MongoDB
+app.get("/api/pokemons", async (req, res) => {
+  try {
+      const pokemons = await Pokemon.find().select("-_id"); // Exclure _id
+      
+      res.status(200).json({ pokemons }); // Ajoute la clé "pokemons" autour du tableau
+  } catch (error) {
+      res.status(500).json({ message: "Erreur lors de la récupération des Pokémons", error });
+  }
+});
 
-// Route Get les images type
+
+
+// Route Get les images type local
 app.get("/api/types/", (req, res) => {
   res.status(200).send({
     status: 200,
@@ -53,7 +66,8 @@ app.get("/api/types/", (req, res) => {
   });
 });
 
-// Route GET pour un pokémon spécifique
+
+/*// Route GET pour un pokémon spécifique JSON
 app.get("/api/pokemons/:id", (req, res) => {
   const pokemon = pokemonsList.find((pokemon) => pokemon.id === parseInt(req.params.id));
   if (!pokemon) {
@@ -71,8 +85,26 @@ app.get("/api/pokemons/:id", (req, res) => {
     }
   );
 });
+*/
 
-// Route Create pour un pokémon
+// Route GET pour un pokémon spécifique MongoDB
+app.get("/api/pokemons/:id", async (req, res) => {
+  try {
+      const pokemon = await Pokemon.findOne({ id: Number(req.params.id) });
+      if (!pokemon) {
+          return res.status(404).json({ message: "Pokémon non trouvé" });
+      }
+      res.status(200).json(pokemon);
+  } catch (error) {
+      res.status(500).json({ message: "Erreur lors de la récupération du Pokémon", error });
+  }
+});
+
+
+
+
+
+// Route Create pour un pokémon JSON 
 app.post("/api/pokemons/create", (req, res) => {
   const { name, type, base } = req.body;
   if (!name || !type || !base) {
@@ -107,7 +139,7 @@ app.post("/api/pokemons/create", (req, res) => {
 
 
 
-// Route PUT pour mettre à jour un pokémon
+// Route PUT pour mettre à jour un pokémon JSON
 app.put("/api/pokemons/:id", (req, res) => {
   const { name, type, base } = req.body;
   const pokemonId = parseInt(req.params.id);
@@ -143,7 +175,7 @@ app.put("/api/pokemons/:id", (req, res) => {
 });
 
 
-
+// Route DELETE pour supprimer un pokémon JSON
 app.delete("/api/pokemons/:id", (req, res) => {
   const pokemonId = parseInt(req.params.id);
   const pokemonIndex = pokemonsList.findIndex(p => p.id === pokemonId);
@@ -165,9 +197,9 @@ app.delete("/api/pokemons/:id", (req, res) => {
 
 
 
-
+// Page d'accueil de l'API instructions
 app.get("/", (req, res) => {
-  res.status(200).send("bienvenue sur l'API Pokémon");
+  res.status(200).send("bienvenue sur l'API Pokémon !");
 });
 
 // Démarrage du serveur
