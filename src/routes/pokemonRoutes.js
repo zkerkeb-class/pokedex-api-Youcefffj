@@ -5,7 +5,7 @@ import authMiddleware from "../middleware/authMiddleware.js";
 
 const router = express.Router();
 
-router.get("/", getAllPokemons);
+router.get("/", authMiddleware, getAllPokemons);
 router.get("/:id", getPokemonById);
 
 export default router;
