@@ -39,6 +39,14 @@ app.use("/api/auth", authRoutes);
 // 'path.join(__dirname, '../assets')' construit le chemin absolu vers le dossier 'assets'
 app.use("/assets", express.static(path.join(__dirname, "../assets")));
 
+// Route Get les images type local
+app.get("/api/types/", (req, res) => {
+  res.status(200).send({
+    status: 200,
+    types: typesList.types
+  });
+});
+
 app.get("/", (req, res) => {
   res.send("Bienvenue sur l'API Pokémon !");
 });
