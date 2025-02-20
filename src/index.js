@@ -9,6 +9,8 @@ import connectDB from "./config/db.js";
 import pokemonRoutes from "./routes/pokemonroutes.js";
 
 
+
+
 dotenv.config();
 connectDB();
 
@@ -28,7 +30,6 @@ app.use(express.json());
 
 app.use("/api/pokemons", pokemonRoutes);
 app.use("/api/auth", authRoutes);
-
 
 
 // Middleware pour servir des fichiers statiques

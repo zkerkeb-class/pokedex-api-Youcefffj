@@ -2,11 +2,11 @@ import express from "express";
 import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
 import { body, validationResult } from "express-validator";
-import User from "../models/APIuser.js";
+import APIUser from "../models/APIuser.js";
 
 const router = express.Router();
 
-// 🔹 Inscription (Register)
+// 🔹 Inscription
 router.post("/register",
     [
         body("username").notEmpty().withMessage("Le nom d'utilisateur est requis"),
@@ -14,7 +14,6 @@ router.post("/register",
         body("password").isLength({ min: 6 }).withMessage("Le mot de passe doit contenir au moins 6 caractères")
     ],
     async (req, res) => {
-        // Vérifier les erreurs de validation
         const errors = validationResult(req);
         if (!errors.isEmpty()) {
             return res.status(400).json({ errors: errors.array() });
@@ -24,7 +23,7 @@ router.post("/register",
             const { username, email, password } = req.body;
 
             // Vérifier si l'utilisateur existe déjà
-            let user = await User.findOne({ email });
+            let user = await APIUser.findOne({ email });
             if (user) {
                 return res.status(400).json({ message: "Cet email est déjà utilisé" });
             }
@@ -34,7 +33,7 @@ router.post("/register",
             const hashedPassword = await bcrypt.hash(password, salt);
 
             // Créer un nouvel utilisateur
-            user = new User({ username, email, password: hashedPassword });
+            user = new APIUser({ username, email, password: hashedPassword });
             await user.save();
 
             res.status(201).json({ message: "Utilisateur créé avec succès !" });
@@ -44,7 +43,7 @@ router.post("/register",
     }
 );
 
-// 🔹 Connexion (Login)
+// 🔹 Connexion
 router.post("/login",
     [
         body("email").isEmail().withMessage("L'email est invalide"),
@@ -60,7 +59,7 @@ router.post("/login",
             const { email, password } = req.body;
 
             // Vérifier si l'utilisateur existe
-            let user = await User.findOne({ email });
+            let user = await APIUser.findOne({ email });
             if (!user) {
                 return res.status(400).json({ message: "Utilisateur non trouvé" });
             }
