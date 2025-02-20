@@ -4,22 +4,33 @@ import fs from 'fs';
 import path from "path";
 import { fileURLToPath } from "url";
 import dotenv from "dotenv";
+import authRoutes from "./routes/authroutes.js";
+import connectDB from "./config/db.js";
+import pokemonRoutes from "./routes/pokemonroutes.js";
+
+
+
 
 dotenv.config();
+connectDB();
 
 // Lire le fichier JSON
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const pokemonsList = JSON.parse(fs.readFileSync(path.join(__dirname, './data/pokemons.json'), 'utf8'));
+const typesList = JSON.parse(fs.readFileSync(path.join(__dirname, './data/types.json'), 'utf8'));
 
 const app = express();
 const PORT = 3000;
 
 // Middleware pour CORS
 app.use(cors());
-
 // Middleware pour parser le JSON
 app.use(express.json());
+
+app.use("/api/pokemons", pokemonRoutes);
+app.use("/api/auth", authRoutes);
+
 
 // Middleware pour servir des fichiers statiques
 // 'app.use' est utilisé pour ajouter un middleware à notre application Express
@@ -28,37 +39,16 @@ app.use(express.json());
 // 'path.join(__dirname, '../assets')' construit le chemin absolu vers le dossier 'assets'
 app.use("/assets", express.static(path.join(__dirname, "../assets")));
 
-// Route GET de base
-app.get("/api/pokemons", (req, res) => {
+// Route Get les images type local
+app.get("/api/types/", (req, res) => {
   res.status(200).send({
-    types: [
-      "fire",
-      "water",
-      "grass",
-      "electric",
-      "ice",
-      "fighting",
-      "poison",
-      "ground",
-      "flying",
-      "psychic",
-      "bug",
-      "rock",
-      "ghost",
-      "dragon",
-      "dark",
-      "steel",
-      "fairy",
-    ],
-    pokemons: pokemonsList,
+    status: 200,
+    types: typesList.types
   });
 });
 
 app.get("/", (req, res) => {
-  res.send("bienvenue sur l'API Pokémon");
+  res.send("Bienvenue sur l'API Pokémon !");
 });
 
-// Démarrage du serveur
-app.listen(PORT, () => {
-  console.log(`Serveur démarré sur http://localhost:${PORT}`);
-});
+app.listen(PORT, () => console.log(`🚀 Serveur lancé sur http://localhost:${PORT}`));

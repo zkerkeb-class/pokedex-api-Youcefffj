@@ -1,0 +1,76 @@
+{
+    "types": [
+        {
+            "type": "Normal",
+            "image": "${process.env.API_URL}/assets/types/Normal.png"
+        },
+        {
+            "type": "Fire",
+            "image": "${process.env.API_URL}/assets/types/Fire.png"
+        },
+        {
+            "type": "Water",
+            "image": "${process.env.API_URL}/assets/types/Water.png"
+        },
+        {
+            "type": "Electric",
+            "image": "${process.env.API_URL}/assets/types/Electric.png"
+        },
+        {
+            "type": "Grass",
+            "image": "${process.env.API_URL}/assets/types/Grass.png"
+        },
+        {
+            "type": "Ice",
+            "image": "${process.env.API_URL}/assets/types/Ice.png"
+        },
+        {
+            "type": "Fighting",
+            "image": "${process.env.API_URL}/assets/types/Fighting.png"
+        },
+        {
+            "type": "Poison",
+            "image": "${process.env.API_URL}/assets/types/Poison.png"
+        },
+        {
+            "type": "Ground",
+            "image": "${process.env.API_URL}/assets/types/Ground.png"
+        },
+        {
+            "type": "Flying",
+            "image": "${process.env.API_URL}/assets/types/Flying.png"
+        },
+        {
+            "type": "Psychic",
+            "image": "${process.env.API_URL}/assets/types/Psychic.png"
+        },
+        {
+            "type": "Bug",
+            "image": "${process.env.API_URL}/assets/types/Bug.png"
+        },
+        {
+            "type": "Rock",
+            "image": "${process.env.API_URL}/assets/types/Rock.png"
+        },
+        {
+            "type": "Ghost",
+            "image": "${process.env.API_URL}/assets/types/Ghost.png"
+        },
+        {
+            "type": "Dragon",
+            "image": "${process.env.API_URL}/assets/types/Dragon.png"
+        },
+        {
+            "type": "Dark",
+            "image": "${process.env.API_URL}/assets/types/Dark.png"
+        },
+        {
+            "type": "Steel",
+            "image": "${process.env.API_URL}/assets/types/Steel.png"
+        },
+        {
+            "type": "Fairy",
+            "image": "${process.env.API_URL}/assets/types/Fairy.png"
+        }
+    ]
+}
