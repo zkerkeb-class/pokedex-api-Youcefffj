@@ -4,10 +4,11 @@ import fs from 'fs';
 import path from "path";
 import { fileURLToPath } from "url";
 import dotenv from "dotenv";
-import authRoutes from "./routes/authroutes.js";
 import connectDB from "./config/db.js";
-import pokemonRoutes from "./routes/pokemonroutes.js";
-
+import pokemonRoutes from "./routes/pokemonRoutes.js";
+import authRoutes from "./routes/AuthRoutes.js";
+import usersRoutes from "./routes/usersRoute.js";
+import dresseursRoutes from "./routes/dresseursRoute.js";
 
 
 
@@ -30,6 +31,8 @@ app.use(express.json());
 
 app.use("/api/pokemons", pokemonRoutes);
 app.use("/api/auth", authRoutes);
+app.use("/api/users", usersRoutes);
+app.use("/api/dresseurs", dresseursRoutes);
 
 
 // Middleware pour servir des fichiers statiques
