@@ -1,4 +1,4 @@
-import Dresseurs from "../models/dresseurSchema.js";
+import Dresseurs from "../models/dresseursSchema.js";
 
 // 🔹 Récupérer tous les dresseurs
 export const getDresseurs = async (req, res) => {
@@ -18,23 +18,20 @@ export const getDresseurs = async (req, res) => {
 };
 
 // 🔹 Récupérer un dresseur par son ID
-export const getDresseurById = async (req, res) => {
+export const getDresseur = async (req, res) => {
     try {
-        const dresseur = await Dresseurs.findById(req.params.id).select('-password');
-        
+        const dresseur = await Dresseurs.findById(req.params.id);
         if (!dresseur) {
             return res.status(404).json({
                 status: 404,
                 message: "Dresseur non trouvé"
             });
         }
-        
         res.status(200).json({
             status: 200,
             dresseur
         });
     } catch (error) {
-        console.error("Erreur lors de la récupération du dresseur:", error);
         res.status(500).json({
             status: 500,
             message: "Erreur lors de la récupération du dresseur"
@@ -190,6 +187,44 @@ export const deleteDresseur = async (req, res) => {
         res.status(500).json({
             status: 500,
             message: "Erreur lors de la suppression du dresseur"
+        });
+    }
+};
+
+export const updateDresseurPokedex = async (req, res) => {
+    try {
+        const dresseur = await Dresseurs.findByIdAndUpdate(
+            req.params.id,
+            { $push: { pokedex: req.body.pokemonId } },
+            { new: true }
+        );
+        res.status(200).json({
+            status: 200,
+            dresseur
+        });
+    } catch (error) {
+        res.status(500).json({
+            status: 500,
+            message: "Erreur lors de la mise à jour du pokedex"
+        });
+    }
+};
+
+export const updateDresseurFavoris = async (req, res) => {
+    try {
+        const dresseur = await Dresseurs.findByIdAndUpdate(
+            req.params.id,
+            { $push: { favoris: req.body.pokemonId } },
+            { new: true }
+        );
+        res.status(200).json({
+            status: 200,
+            dresseur
+        });
+    } catch (error) {
+        res.status(500).json({
+            status: 500,
+            message: "Erreur lors de la mise à jour des favoris"
         });
     }
 }; 

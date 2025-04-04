@@ -1,4 +1,5 @@
 import Users from "../models/usersSchema.js";
+import Dresseurs from "../models/dresseursSchema.js";
 import bcrypt from 'bcrypt';
 
 
@@ -32,26 +33,37 @@ export const createUser = async (req, res) => {
             });
         }
 
+        // Créer l'utilisateur
         const newUser = new Users({
             username,
             password: password
         });
-
         await newUser.save();
+
+        // Créer le dresseur associé avec le même ID
+        const newDresseur = new Dresseurs({
+            _id: newUser._id,  // Utilise l'ID de l'utilisateur
+            username: username,
+            pokedex: [],
+            favoris: []
+        });
+        await newDresseur.save();
+
+        console.log('Dresseur créé:', newDresseur); // Debug log
 
         res.status(201).json({
             status: 201,
-            message: "Utilisateur créé avec succès",
+            message: "Utilisateur et dresseur créés avec succès",
             user: {
                 _id: newUser._id,
                 username: newUser.username
             }
         });
     } catch (error) {
-        console.error("Erreur lors de la création de l'utilisateur:", error);
+        console.error("Erreur lors de la création:", error);
         res.status(500).json({
             status: 500,
-            message: "Erreur lors de la création de l'utilisateur"
+            message: "Erreur lors de la création de l'utilisateur et du dresseur"
         });
     }
 };
