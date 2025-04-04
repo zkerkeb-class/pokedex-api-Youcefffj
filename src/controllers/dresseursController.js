@@ -193,19 +193,64 @@ export const deleteDresseur = async (req, res) => {
 
 export const updateDresseurPokedex = async (req, res) => {
     try {
-        const dresseur = await Dresseurs.findByIdAndUpdate(
-            req.params.id,
-            { $push: { pokedex: req.body.pokemonId } },
-            { new: true }
-        );
+        const { id } = req.params;
+        const { pokemonIds } = req.body;
+
+        console.log('Requête reçue:', { id, pokemonIds });
+
+        if (!id || !pokemonIds || !Array.isArray(pokemonIds)) {
+            return res.status(400).json({
+                status: 400,
+                message: "Données invalides"
+            });
+        }
+
+        const dresseur = await Dresseurs.findById(id);
+        
+        if (!dresseur) {
+            return res.status(404).json({
+                status: 404,
+                message: "Dresseur non trouvé"
+            });
+        }
+
+        // S'assurer que pokedex est un tableau
+        if (!Array.isArray(dresseur.pokedex)) {
+            dresseur.pokedex = [];
+        }
+
+        // Convertir les IDs en nombres et filtrer les doublons
+        const newPokemonIds = pokemonIds.map(Number);
+        
+        // Ajouter uniquement les nouveaux pokémons
+        newPokemonIds.forEach(id => {
+            if (!dresseur.pokedex.includes(id)) {
+                dresseur.pokedex.push(id);
+            }
+        });
+
+        console.log('Pokedex avant sauvegarde:', dresseur.pokedex);
+        
+        // Marquer le champ comme modifié
+        dresseur.markModified('pokedex');
+        
+        // Sauvegarder
+        const savedDresseur = await dresseur.save();
+        
+        console.log('Dresseur sauvegardé:', savedDresseur);
+
         res.status(200).json({
             status: 200,
-            dresseur
+            message: "Pokémons ajoutés au pokedex",
+            dresseur: savedDresseur
         });
     } catch (error) {
+        console.error("Erreur complète:", error);
         res.status(500).json({
             status: 500,
-            message: "Erreur lors de la mise à jour du pokedex"
+            message: "Erreur lors de la mise à jour du pokedex",
+            error: error.message,
+            stack: error.stack
         });
     }
 };
