@@ -212,16 +212,31 @@ export const updateDresseurPokedex = async (req, res) => {
 
 export const updateDresseurFavoris = async (req, res) => {
     try {
-        const dresseur = await Dresseurs.findByIdAndUpdate(
-            req.params.id,
-            { $push: { favoris: req.body.pokemonId } },
-            { new: true }
-        );
+        const dresseur = await Dresseurs.findById(req.params.id);
+        const pokemonId = req.body.pokemonId;
+
+        if (!dresseur) {
+            return res.status(404).json({
+                status: 404,
+                message: "Dresseur non trouvé"
+            });
+        }
+
+        // Toggle favori : ajouter si absent, retirer si présent
+        if (dresseur.favoris.includes(pokemonId)) {
+            dresseur.favoris = dresseur.favoris.filter(id => id !== pokemonId);
+        } else {
+            dresseur.favoris.push(pokemonId);
+        }
+
+        await dresseur.save();
+
         res.status(200).json({
             status: 200,
             dresseur
         });
     } catch (error) {
+        console.error("Erreur lors de la mise à jour des favoris:", error);
         res.status(500).json({
             status: 500,
             message: "Erreur lors de la mise à jour des favoris"
