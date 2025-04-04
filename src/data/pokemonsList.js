@@ -23,7 +23,8 @@ const pokemonsList = [
             "Sp. Defense": 65,
             "Speed": 45
         },
-        "image": `${process.env.API_URL}/assets/pokemons/1.png`     
+        "image": `${process.env.API_URL}/assets/pokemons/1.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/1.png`
     },
     {
         "id": 2,
@@ -45,7 +46,8 @@ const pokemonsList = [
             "Sp. Defense": 80,
             "Speed": 60
         },
-        "image": `${process.env.API_URL}/assets/pokemons/2.png` 
+        "image": `${process.env.API_URL}/assets/pokemons/2.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/2.png`
     },
     {
         "id": 3,
@@ -67,7 +69,8 @@ const pokemonsList = [
             "Sp. Defense": 100,
             "Speed": 80
         },
-        "image": `${process.env.API_URL}/assets/pokemons/3.png`
+        "image": `${process.env.API_URL}/assets/pokemons/3.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/3.png`
     },
     {
         "id": 4,
@@ -88,7 +91,8 @@ const pokemonsList = [
             "Sp. Defense": 50,
             "Speed": 65
         },
-        "image": `${process.env.API_URL}/assets/pokemons/4.png`
+        "image": `${process.env.API_URL}/assets/pokemons/4.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/4.png`
     },
     {
         "id": 5,
@@ -109,7 +113,8 @@ const pokemonsList = [
             "Sp. Defense": 65,
             "Speed": 80
         },
-        "image": `${process.env.API_URL}/assets/pokemons/5.png`
+        "image": `${process.env.API_URL}/assets/pokemons/5.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/5.png`
     },
     {
         "id": 6,
@@ -131,7 +136,8 @@ const pokemonsList = [
             "Sp. Defense": 85,
             "Speed": 100
         },
-        "image": `${process.env.API_URL}/assets/pokemons/6.png`
+        "image": `${process.env.API_URL}/assets/pokemons/6.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/6.png`
     },
     {
         "id": 7,
@@ -152,7 +158,8 @@ const pokemonsList = [
             "Sp. Defense": 64,
             "Speed": 43
         },
-        "image": `${process.env.API_URL}/assets/pokemons/7.png`
+        "image": `${process.env.API_URL}/assets/pokemons/7.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/7.png`
     },
     {
         "id": 8,
@@ -173,7 +180,8 @@ const pokemonsList = [
             "Sp. Defense": 80,
             "Speed": 58
         },
-        "image": `${process.env.API_URL}/assets/pokemons/8.png`
+        "image": `${process.env.API_URL}/assets/pokemons/8.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/8.png`
     },
     {
         "id": 9,
@@ -194,7 +202,8 @@ const pokemonsList = [
             "Sp. Defense": 105,
             "Speed": 78
         },
-        "image": `${process.env.API_URL}/assets/pokemons/9.png`
+        "image": `${process.env.API_URL}/assets/pokemons/9.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/9.png`
     },
     {
         "id": 10,
@@ -215,7 +224,8 @@ const pokemonsList = [
             "Sp. Defense": 20,
             "Speed": 45
         },
-        "image": `${process.env.API_URL}/assets/pokemons/10.png`
+        "image": `${process.env.API_URL}/assets/pokemons/10.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/10.png`
     },
     {
         "id": 11,
@@ -236,7 +246,8 @@ const pokemonsList = [
             "Sp. Defense": 25,
             "Speed": 30
         },
-        "image": `${process.env.API_URL}/assets/pokemons/11.png`
+        "image": `${process.env.API_URL}/assets/pokemons/11.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/11.png`
     },
     {
         "id": 12,
@@ -258,7 +269,8 @@ const pokemonsList = [
             "Sp. Defense": 80,
             "Speed": 70
         },
-        "image": `${process.env.API_URL}/assets/pokemons/12.png`
+        "image": `${process.env.API_URL}/assets/pokemons/12.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/12.png`
     },
     {
         "id": 13,
@@ -280,7 +292,8 @@ const pokemonsList = [
             "Sp. Defense": 20,
             "Speed": 50
         },
-        "image": `${process.env.API_URL}/assets/pokemons/13.png`
+        "image": `${process.env.API_URL}/assets/pokemons/13.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/13.png`
     },
     {
         "id": 14,
@@ -302,7 +315,8 @@ const pokemonsList = [
             "Sp. Defense": 25,
             "Speed": 35
         },
-        "image": `${process.env.API_URL}/assets/pokemons/14.png`
+        "image": `${process.env.API_URL}/assets/pokemons/14.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/14.png`
     },
     {
         "id": 15,
@@ -324,7 +338,8 @@ const pokemonsList = [
             "Sp. Defense": 80,
             "Speed": 75
         },
-        "image": `${process.env.API_URL}/assets/pokemons/15.png`
+        "image": `${process.env.API_URL}/assets/pokemons/15.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/15.png`
     },
     {
         "id": 16,
@@ -346,7 +361,8 @@ const pokemonsList = [
             "Sp. Defense": 35,
             "Speed": 56
         },
-        "image": `${process.env.API_URL}/assets/pokemons/16.png`
+        "image": `${process.env.API_URL}/assets/pokemons/16.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/16.png`
     },
     {
         "id": 17,
@@ -368,7 +384,8 @@ const pokemonsList = [
             "Sp. Defense": 50,
             "Speed": 71
         },
-        "image": `${process.env.API_URL}/assets/pokemons/17.png`
+        "image": `${process.env.API_URL}/assets/pokemons/17.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/17.png`
     },
     {
         "id": 18,
@@ -390,7 +407,8 @@ const pokemonsList = [
             "Sp. Defense": 70,
             "Speed": 101
         },
-        "image": `${process.env.API_URL}/assets/pokemons/18.png`
+        "image": `${process.env.API_URL}/assets/pokemons/18.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/18.png`
     },
     {
         "id": 19,
@@ -411,7 +429,8 @@ const pokemonsList = [
             "Sp. Defense": 35,
             "Speed": 72
         },
-        "image": `${process.env.API_URL}/assets/pokemons/19.png`
+        "image": `${process.env.API_URL}/assets/pokemons/19.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/19.png`
     },
     {
         "id": 20,
@@ -432,7 +451,8 @@ const pokemonsList = [
             "Sp. Defense": 70,
             "Speed": 97
         },
-        "image": `${process.env.API_URL}/assets/pokemons/20.png`
+        "image": `${process.env.API_URL}/assets/pokemons/20.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/20.png`
     },
     {
         "id": 21,
@@ -454,7 +474,8 @@ const pokemonsList = [
             "Sp. Defense": 31,
             "Speed": 70
         },
-        "image": `${process.env.API_URL}/assets/pokemons/21.png`
+        "image": `${process.env.API_URL}/assets/pokemons/21.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/21.png`
     },
     {
         "id": 22,
@@ -476,7 +497,8 @@ const pokemonsList = [
             "Sp. Defense": 61,
             "Speed": 100
         },
-        "image": `${process.env.API_URL}/assets/pokemons/22.png`
+        "image": `${process.env.API_URL}/assets/pokemons/22.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/22.png`
     },
     {
         "id": 23,
@@ -497,7 +519,8 @@ const pokemonsList = [
             "Sp. Defense": 54,
             "Speed": 55
         },
-        "image": `${process.env.API_URL}/assets/pokemons/23.png`
+        "image": `${process.env.API_URL}/assets/pokemons/23.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/23.png`
     },
     {
         "id": 24,
@@ -518,7 +541,8 @@ const pokemonsList = [
             "Sp. Defense": 79,
             "Speed": 80
         },
-        "image": `${process.env.API_URL}/assets/pokemons/24.png`
+        "image": `${process.env.API_URL}/assets/pokemons/24.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/24.png`
     },
     {
         "id": 25,
@@ -539,7 +563,8 @@ const pokemonsList = [
             "Sp. Defense": 50,
             "Speed": 90
         },
-        "image": `${process.env.API_URL}/assets/pokemons/25.png`
+        "image": `${process.env.API_URL}/assets/pokemons/25.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/25.png`
     },
     {
         "id": 26,
@@ -560,7 +585,8 @@ const pokemonsList = [
             "Sp. Defense": 80,
             "Speed": 110
         },
-        "image": `${process.env.API_URL}/assets/pokemons/26.png`
+        "image": `${process.env.API_URL}/assets/pokemons/26.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/26.png`
     },
     {
         "id": 27,
@@ -581,7 +607,8 @@ const pokemonsList = [
             "Sp. Defense": 30,
             "Speed": 40
         },
-        "image": `${process.env.API_URL}/assets/pokemons/27.png`
+        "image": `${process.env.API_URL}/assets/pokemons/27.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/27.png`
     },
     {
         "id": 28,
@@ -602,7 +629,8 @@ const pokemonsList = [
             "Sp. Defense": 55,
             "Speed": 65
         },
-        "image": `${process.env.API_URL}/assets/pokemons/28.png`
+        "image": `${process.env.API_URL}/assets/pokemons/28.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/28.png`
     },
     {
         "id": 29,
@@ -623,7 +651,8 @@ const pokemonsList = [
             "Sp. Defense": 40,
             "Speed": 41
         },
-        "image": `${process.env.API_URL}/assets/pokemons/29.png`
+        "image": `${process.env.API_URL}/assets/pokemons/29.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/29.png`
     },
     {
         "id": 30,
@@ -644,7 +673,8 @@ const pokemonsList = [
             "Sp. Defense": 55,
             "Speed": 56
         },
-        "image": `${process.env.API_URL}/assets/pokemons/30.png`
+        "image": `${process.env.API_URL}/assets/pokemons/30.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/30.png`
     },
     {
         "id": 31,
@@ -666,7 +696,8 @@ const pokemonsList = [
             "Sp. Defense": 85,
             "Speed": 76
         },
-        "image": `${process.env.API_URL}/assets/pokemons/31.png`
+        "image": `${process.env.API_URL}/assets/pokemons/31.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/31.png`
     },
     {
         "id": 32,
@@ -687,7 +718,8 @@ const pokemonsList = [
             "Sp. Defense": 40,
             "Speed": 50
         },
-        "image": `${process.env.API_URL}/assets/pokemons/32.png`
+        "image": `${process.env.API_URL}/assets/pokemons/32.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/32.png`
     },
     {
         "id": 33,
@@ -708,7 +740,8 @@ const pokemonsList = [
             "Sp. Defense": 55,
             "Speed": 65
         },
-        "image": `${process.env.API_URL}/assets/pokemons/33.png`
+        "image": `${process.env.API_URL}/assets/pokemons/33.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/33.png`
     },
     {
         "id": 34,
@@ -730,7 +763,8 @@ const pokemonsList = [
             "Sp. Defense": 75,
             "Speed": 85
         },
-        "image": `${process.env.API_URL}/assets/pokemons/34.png`
+        "image": `${process.env.API_URL}/assets/pokemons/34.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/34.png`
     },
     {
         "id": 35,
@@ -751,7 +785,8 @@ const pokemonsList = [
             "Sp. Defense": 65,
             "Speed": 35
         },
-        "image": `${process.env.API_URL}/assets/pokemons/35.png`
+        "image": `${process.env.API_URL}/assets/pokemons/35.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/35.png`
     },
     {
         "id": 36,
@@ -772,7 +807,8 @@ const pokemonsList = [
             "Sp. Defense": 90,
             "Speed": 60
         },
-        "image": `${process.env.API_URL}/assets/pokemons/36.png`
+        "image": `${process.env.API_URL}/assets/pokemons/36.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/36.png`
     },
     {
         "id": 37,
@@ -793,7 +829,8 @@ const pokemonsList = [
             "Sp. Defense": 65,
             "Speed": 65
         },
-        "image": `${process.env.API_URL}/assets/pokemons/37.png`
+        "image": `${process.env.API_URL}/assets/pokemons/37.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/37.png`
     },
     {
         "id": 38,
@@ -814,7 +851,8 @@ const pokemonsList = [
             "Sp. Defense": 100,
             "Speed": 100
         },
-        "image": `${process.env.API_URL}/assets/pokemons/38.png`
+        "image": `${process.env.API_URL}/assets/pokemons/38.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/38.png`
     },
     {
         "id": 39,
@@ -836,7 +874,8 @@ const pokemonsList = [
             "Sp. Defense": 25,
             "Speed": 20
         },
-        "image": `${process.env.API_URL}/assets/pokemons/39.png`
+        "image": `${process.env.API_URL}/assets/pokemons/39.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/39.png`
     },
     {
         "id": 40,
@@ -858,7 +897,8 @@ const pokemonsList = [
             "Sp. Defense": 50,
             "Speed": 45
         },
-        "image": `${process.env.API_URL}/assets/pokemons/40.png`
+        "image": `${process.env.API_URL}/assets/pokemons/40.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/40.png`
     },
     {
         "id": 41,
@@ -880,7 +920,8 @@ const pokemonsList = [
             "Sp. Defense": 40,
             "Speed": 55
         },
-        "image": `${process.env.API_URL}/assets/pokemons/41.png`
+        "image": `${process.env.API_URL}/assets/pokemons/41.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/41.png`
     },
     {
         "id": 42,
@@ -902,7 +943,8 @@ const pokemonsList = [
             "Sp. Defense": 75,
             "Speed": 90
         },
-        "image": `${process.env.API_URL}/assets/pokemons/42.png`
+        "image": `${process.env.API_URL}/assets/pokemons/42.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/42.png`
     },
     {
         "id": 43,
@@ -924,7 +966,8 @@ const pokemonsList = [
             "Sp. Defense": 65,
             "Speed": 30
         },
-        "image": `${process.env.API_URL}/assets/pokemons/43.png`
+        "image": `${process.env.API_URL}/assets/pokemons/43.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/43.png`
     },
     {
         "id": 44,
@@ -946,7 +989,8 @@ const pokemonsList = [
             "Sp. Defense": 75,
             "Speed": 40
         },
-        "image": `${process.env.API_URL}/assets/pokemons/44.png`
+        "image": `${process.env.API_URL}/assets/pokemons/44.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/44.png`
     },
     {
         "id": 45,
@@ -968,7 +1012,8 @@ const pokemonsList = [
             "Sp. Defense": 90,
             "Speed": 50
         },
-        "image": `${process.env.API_URL}/assets/pokemons/45.png`
+        "image": `${process.env.API_URL}/assets/pokemons/45.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/45.png`
     },
     {
         "id": 46,
@@ -990,7 +1035,8 @@ const pokemonsList = [
             "Sp. Defense": 55,
             "Speed": 25
         },
-        "image": `${process.env.API_URL}/assets/pokemons/46.png`
+        "image": `${process.env.API_URL}/assets/pokemons/46.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/46.png`
     },
     {
         "id": 47,
@@ -1012,7 +1058,8 @@ const pokemonsList = [
             "Sp. Defense": 80,
             "Speed": 30
         },
-        "image": `${process.env.API_URL}/assets/pokemons/47.png`
+        "image": `${process.env.API_URL}/assets/pokemons/47.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/47.png`
     },
     {
         "id": 48,
@@ -1034,7 +1081,8 @@ const pokemonsList = [
             "Sp. Defense": 55,
             "Speed": 45
         },
-        "image": `${process.env.API_URL}/assets/pokemons/48.png`
+        "image": `${process.env.API_URL}/assets/pokemons/48.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/48.png`
     },
     {
         "id": 49,
@@ -1056,7 +1104,8 @@ const pokemonsList = [
             "Sp. Defense": 75,
             "Speed": 90
         },
-        "image": `${process.env.API_URL}/assets/pokemons/49.png`
+        "image": `${process.env.API_URL}/assets/pokemons/49.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/49.png`
     },
     {
         "id": 50,
@@ -1077,7 +1126,8 @@ const pokemonsList = [
             "Sp. Defense": 45,
             "Speed": 95
         },
-        "image": `${process.env.API_URL}/assets/pokemons/50.png`
+        "image": `${process.env.API_URL}/assets/pokemons/50.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/50.png`
     },
     {
         "id": 51,
@@ -1098,7 +1148,8 @@ const pokemonsList = [
             "Sp. Defense": 70,
             "Speed": 120
         },
-        "image": `${process.env.API_URL}/assets/pokemons/51.png`
+        "image": `${process.env.API_URL}/assets/pokemons/51.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/51.png`
     },
     {
         "id": 52,
@@ -1119,7 +1170,8 @@ const pokemonsList = [
             "Sp. Defense": 40,
             "Speed": 90
         },
-        "image": `${process.env.API_URL}/assets/pokemons/52.png`
+        "image": `${process.env.API_URL}/assets/pokemons/52.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/52.png`
     },
     {
         "id": 53,
@@ -1140,7 +1192,8 @@ const pokemonsList = [
             "Sp. Defense": 65,
             "Speed": 115
         },
-        "image": `${process.env.API_URL}/assets/pokemons/53.png`
+        "image": `${process.env.API_URL}/assets/pokemons/53.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/53.png`
     },
     {
         "id": 54,
@@ -1161,7 +1214,8 @@ const pokemonsList = [
             "Sp. Defense": 50,
             "Speed": 55
         },
-        "image": `${process.env.API_URL}/assets/pokemons/54.png`
+        "image": `${process.env.API_URL}/assets/pokemons/54.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/54.png`
     },
     {
         "id": 55,
@@ -1182,7 +1236,8 @@ const pokemonsList = [
             "Sp. Defense": 80,
             "Speed": 85
         },
-        "image": `${process.env.API_URL}/assets/pokemons/55.png`
+        "image": `${process.env.API_URL}/assets/pokemons/55.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/55.png`
     },
     {
         "id": 56,
@@ -1203,7 +1258,8 @@ const pokemonsList = [
             "Sp. Defense": 45,
             "Speed": 70
         },
-        "image": `${process.env.API_URL}/assets/pokemons/56.png`
+        "image": `${process.env.API_URL}/assets/pokemons/56.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/56.png`
     },
     {
         "id": 57,
@@ -1224,7 +1280,8 @@ const pokemonsList = [
             "Sp. Defense": 70,
             "Speed": 95
         },
-        "image": `${process.env.API_URL}/assets/pokemons/57.png`
+        "image": `${process.env.API_URL}/assets/pokemons/57.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/57.png`
     },
     {
         "id": 58,
@@ -1245,7 +1302,8 @@ const pokemonsList = [
             "Sp. Defense": 50,
             "Speed": 60
         },
-        "image": `${process.env.API_URL}/assets/pokemons/58.png`
+        "image": `${process.env.API_URL}/assets/pokemons/58.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/58.png`
     },
     {
         "id": 59,
@@ -1266,7 +1324,8 @@ const pokemonsList = [
             "Sp. Defense": 80,
             "Speed": 95
         },
-        "image": `${process.env.API_URL}/assets/pokemons/59.png`
+        "image": `${process.env.API_URL}/assets/pokemons/59.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/59.png`
     },
     {
         "id": 60,
@@ -1287,7 +1346,8 @@ const pokemonsList = [
             "Sp. Defense": 40,
             "Speed": 90
         },
-        "image": `${process.env.API_URL}/assets/pokemons/60.png`
+        "image": `${process.env.API_URL}/assets/pokemons/60.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/60.png`
     },
     {
         "id": 61,
@@ -1308,7 +1368,8 @@ const pokemonsList = [
             "Sp. Defense": 50,
             "Speed": 90
         },
-        "image": `${process.env.API_URL}/assets/pokemons/61.png`
+        "image": `${process.env.API_URL}/assets/pokemons/61.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/61.png`
     },
     {
         "id": 62,
@@ -1330,7 +1391,8 @@ const pokemonsList = [
             "Sp. Defense": 90,
             "Speed": 70
         },
-        "image": `${process.env.API_URL}/assets/pokemons/62.png`
+        "image": `${process.env.API_URL}/assets/pokemons/62.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/62.png`
     },
     {
         "id": 63,
@@ -1351,7 +1413,8 @@ const pokemonsList = [
             "Sp. Defense": 55,
             "Speed": 90
         },
-        "image": `${process.env.API_URL}/assets/pokemons/63.png`
+        "image": `${process.env.API_URL}/assets/pokemons/63.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/63.png`
     },
     {
         "id": 64,
@@ -1372,7 +1435,8 @@ const pokemonsList = [
             "Sp. Defense": 70,
             "Speed": 105
         },
-        "image": `${process.env.API_URL}/assets/pokemons/64.png`
+        "image": `${process.env.API_URL}/assets/pokemons/64.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/64.png`
     },
     {
         "id": 65,
@@ -1393,7 +1457,8 @@ const pokemonsList = [
             "Sp. Defense": 95,
             "Speed": 120
         },
-        "image": `${process.env.API_URL}/assets/pokemons/65.png`
+        "image": `${process.env.API_URL}/assets/pokemons/65.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/65.png`
     },
     {
         "id": 66,
@@ -1414,7 +1479,8 @@ const pokemonsList = [
             "Sp. Defense": 35,
             "Speed": 35
         },
-        "image": `${process.env.API_URL}/assets/pokemons/66.png`
+        "image": `${process.env.API_URL}/assets/pokemons/66.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/66.png`
     },
     {
         "id": 67,
@@ -1435,7 +1501,8 @@ const pokemonsList = [
             "Sp. Defense": 60,
             "Speed": 45
         },
-        "image": `${process.env.API_URL}/assets/pokemons/67.png`
+        "image": `${process.env.API_URL}/assets/pokemons/67.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/67.png`
     },
     {
         "id": 68,
@@ -1456,7 +1523,8 @@ const pokemonsList = [
             "Sp. Defense": 85,
             "Speed": 55
         },
-        "image": `${process.env.API_URL}/assets/pokemons/68.png`
+        "image": `${process.env.API_URL}/assets/pokemons/68.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/68.png`
     },
     {
         "id": 69,
@@ -1478,7 +1546,8 @@ const pokemonsList = [
             "Sp. Defense": 30,
             "Speed": 40
         },
-        "image": `${process.env.API_URL}/assets/pokemons/69.png`
+        "image": `${process.env.API_URL}/assets/pokemons/69.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/69.png`
     },
     {
         "id": 70,
@@ -1500,7 +1569,8 @@ const pokemonsList = [
             "Sp. Defense": 45,
             "Speed": 55
         },
-        "image": `${process.env.API_URL}/assets/pokemons/70.png`
+        "image": `${process.env.API_URL}/assets/pokemons/70.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/70.png`
     },
     {
         "id": 71,
@@ -1522,7 +1592,8 @@ const pokemonsList = [
             "Sp. Defense": 70,
             "Speed": 70
         },
-        "image": `${process.env.API_URL}/assets/pokemons/71.png`
+        "image": `${process.env.API_URL}/assets/pokemons/71.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/71.png`
     },
     {
         "id": 72,
@@ -1544,7 +1615,8 @@ const pokemonsList = [
             "Sp. Defense": 100,
             "Speed": 70
         },
-        "image": `${process.env.API_URL}/assets/pokemons/72.png`
+        "image": `${process.env.API_URL}/assets/pokemons/72.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/72.png`
     },
     {
         "id": 73,
@@ -1566,7 +1638,8 @@ const pokemonsList = [
             "Sp. Defense": 120,
             "Speed": 100
         },
-        "image": `${process.env.API_URL}/assets/pokemons/73.png`
+        "image": `${process.env.API_URL}/assets/pokemons/73.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/73.png`
     },
     {
         "id": 74,
@@ -1588,7 +1661,8 @@ const pokemonsList = [
             "Sp. Defense": 30,
             "Speed": 20
         },
-        "image": `${process.env.API_URL}/assets/pokemons/74.png`
+        "image": `${process.env.API_URL}/assets/pokemons/74.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/74.png`
     },
     {
         "id": 75,
@@ -1610,7 +1684,8 @@ const pokemonsList = [
             "Sp. Defense": 45,
             "Speed": 35
         },
-        "image": `${process.env.API_URL}/assets/pokemons/75.png`
+        "image": `${process.env.API_URL}/assets/pokemons/75.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/75.png`
     },
     {
         "id": 76,
@@ -1632,7 +1707,8 @@ const pokemonsList = [
             "Sp. Defense": 65,
             "Speed": 45
         },
-        "image": `${process.env.API_URL}/assets/pokemons/76.png`
+        "image": `${process.env.API_URL}/assets/pokemons/76.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/76.png`
     },
     {
         "id": 77,
@@ -1653,7 +1729,8 @@ const pokemonsList = [
             "Sp. Defense": 65,
             "Speed": 90
         },
-        "image": `${process.env.API_URL}/assets/pokemons/77.png`
+        "image": `${process.env.API_URL}/assets/pokemons/77.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/77.png`
     },
     {
         "id": 78,
@@ -1674,7 +1751,8 @@ const pokemonsList = [
             "Sp. Defense": 80,
             "Speed": 105
         },
-        "image": `${process.env.API_URL}/assets/pokemons/78.png`
+        "image": `${process.env.API_URL}/assets/pokemons/78.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/78.png`
     },
     {
         "id": 79,
@@ -1696,7 +1774,8 @@ const pokemonsList = [
             "Sp. Defense": 40,
             "Speed": 15
         },
-        "image": `${process.env.API_URL}/assets/pokemons/79.png`
+        "image": `${process.env.API_URL}/assets/pokemons/79.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/79.png`
     },
     {
         "id": 80,
@@ -1718,7 +1797,8 @@ const pokemonsList = [
             "Sp. Defense": 80,
             "Speed": 30
         },
-        "image": `${process.env.API_URL}/assets/pokemons/80.png`
+        "image": `${process.env.API_URL}/assets/pokemons/80.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/80.png`
     },
     {
         "id": 81,
@@ -1740,7 +1820,8 @@ const pokemonsList = [
             "Sp. Defense": 55,
             "Speed": 45
         },
-        "image": `${process.env.API_URL}/assets/pokemons/81.png`
+        "image": `${process.env.API_URL}/assets/pokemons/81.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/81.png`
     },
     {
         "id": 82,
@@ -1762,7 +1843,8 @@ const pokemonsList = [
             "Sp. Defense": 70,
             "Speed": 70
         },
-        "image": `${process.env.API_URL}/assets/pokemons/82.png`
+        "image": `${process.env.API_URL}/assets/pokemons/82.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/82.png`
     },
     {
         "id": 83,
@@ -1784,7 +1866,8 @@ const pokemonsList = [
             "Sp. Defense": 62,
             "Speed": 60
         },
-        "image": `${process.env.API_URL}/assets/pokemons/83.png`
+        "image": `${process.env.API_URL}/assets/pokemons/83.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/83.png`
     },
     {
         "id": 84,
@@ -1806,7 +1889,8 @@ const pokemonsList = [
             "Sp. Defense": 35,
             "Speed": 75
         },
-        "image": `${process.env.API_URL}/assets/pokemons/84.png`
+        "image": `${process.env.API_URL}/assets/pokemons/84.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/84.png`
     },
     {
         "id": 85,
@@ -1828,7 +1912,8 @@ const pokemonsList = [
             "Sp. Defense": 60,
             "Speed": 110
         },
-        "image": `${process.env.API_URL}/assets/pokemons/85.png`
+        "image": `${process.env.API_URL}/assets/pokemons/85.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/85.png`
     },
     {
         "id": 86,
@@ -1849,7 +1934,8 @@ const pokemonsList = [
             "Sp. Defense": 70,
             "Speed": 45
         },
-        "image": `${process.env.API_URL}/assets/pokemons/86.png`
+        "image": `${process.env.API_URL}/assets/pokemons/86.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/86.png`
     },
     {
         "id": 87,
@@ -1871,7 +1957,8 @@ const pokemonsList = [
             "Sp. Defense": 95,
             "Speed": 70
         },
-        "image": `${process.env.API_URL}/assets/pokemons/87.png`
+        "image": `${process.env.API_URL}/assets/pokemons/87.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/87.png`
     },
     {
         "id": 88,
@@ -1892,7 +1979,8 @@ const pokemonsList = [
             "Sp. Defense": 50,
             "Speed": 25
         },
-        "image": `${process.env.API_URL}/assets/pokemons/88.png`
+        "image": `${process.env.API_URL}/assets/pokemons/88.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/88.png`
     },
     {
         "id": 89,
@@ -1913,7 +2001,8 @@ const pokemonsList = [
             "Sp. Defense": 100,
             "Speed": 50
         },
-        "image": `${process.env.API_URL}/assets/pokemons/89.png`
+        "image": `${process.env.API_URL}/assets/pokemons/89.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/89.png`
     },
     {
         "id": 90,
@@ -1934,7 +2023,8 @@ const pokemonsList = [
             "Sp. Defense": 25,
             "Speed": 40
         },
-        "image": `${process.env.API_URL}/assets/pokemons/90.png`
+        "image": `${process.env.API_URL}/assets/pokemons/90.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/90.png`
     },
     {
         "id": 91,
@@ -1956,7 +2046,8 @@ const pokemonsList = [
             "Sp. Defense": 45,
             "Speed": 70
         },
-        "image": `${process.env.API_URL}/assets/pokemons/91.png`
+        "image": `${process.env.API_URL}/assets/pokemons/91.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/91.png`
     },
     {
         "id": 92,
@@ -1978,7 +2069,8 @@ const pokemonsList = [
             "Sp. Defense": 35,
             "Speed": 80
         },
-        "image": `${process.env.API_URL}/assets/pokemons/92.png`
+        "image": `${process.env.API_URL}/assets/pokemons/92.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/92.png`
     },
     {
         "id": 93,
@@ -2000,7 +2092,8 @@ const pokemonsList = [
             "Sp. Defense": 55,
             "Speed": 95
         },
-        "image": `${process.env.API_URL}/assets/pokemons/93.png`
+        "image": `${process.env.API_URL}/assets/pokemons/93.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/93.png`
     },
     {
         "id": 94,
@@ -2022,7 +2115,8 @@ const pokemonsList = [
             "Sp. Defense": 75,
             "Speed": 110
         },
-        "image": `${process.env.API_URL}/assets/pokemons/94.png`
+        "image": `${process.env.API_URL}/assets/pokemons/94.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/94.png`
     },
     {
         "id": 95,
@@ -2044,7 +2138,8 @@ const pokemonsList = [
             "Sp. Defense": 45,
             "Speed": 70
         },
-        "image": `${process.env.API_URL}/assets/pokemons/95.png`
+        "image": `${process.env.API_URL}/assets/pokemons/95.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/95.png`
     },
     {
         "id": 96,
@@ -2065,7 +2160,8 @@ const pokemonsList = [
             "Sp. Defense": 90,
             "Speed": 42
         },
-        "image": `${process.env.API_URL}/assets/pokemons/96.png`
+        "image": `${process.env.API_URL}/assets/pokemons/96.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/96.png`
     },
     {
         "id": 97,
@@ -2086,7 +2182,8 @@ const pokemonsList = [
             "Sp. Defense": 115,
             "Speed": 67
         },
-        "image": `${process.env.API_URL}/assets/pokemons/97.png`
+        "image": `${process.env.API_URL}/assets/pokemons/97.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/97.png`
     },
     {
         "id": 98,
@@ -2107,7 +2204,8 @@ const pokemonsList = [
             "Sp. Defense": 25,
             "Speed": 50
         },
-        "image": `${process.env.API_URL}/assets/pokemons/98.png`
+        "image": `${process.env.API_URL}/assets/pokemons/98.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/98.png`
     },
     {
         "id": 99,
@@ -2128,7 +2226,8 @@ const pokemonsList = [
             "Sp. Defense": 50,
             "Speed": 75
         },
-        "image": `${process.env.API_URL}/assets/pokemons/99.png`
+        "image": `${process.env.API_URL}/assets/pokemons/99.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/99.png`
     },
     {
         "id": 100,
@@ -2149,7 +2248,8 @@ const pokemonsList = [
             "Sp. Defense": 55,
             "Speed": 100
         },
-        "image": `${process.env.API_URL}/assets/pokemons/100.png`
+        "image": `${process.env.API_URL}/assets/pokemons/100.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/100.png`
     },
     {
         "id": 101,
@@ -2170,7 +2270,8 @@ const pokemonsList = [
             "Sp. Defense": 80,
             "Speed": 150
         },
-        "image": `${process.env.API_URL}/assets/pokemons/101.png`
+        "image": `${process.env.API_URL}/assets/pokemons/101.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/101.png`
     },
     {
         "id": 102,
@@ -2192,7 +2293,8 @@ const pokemonsList = [
             "Sp. Defense": 45,
             "Speed": 40
         },
-        "image": `${process.env.API_URL}/assets/pokemons/102.png`
+        "image": `${process.env.API_URL}/assets/pokemons/102.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/102.png`
     },
     {
         "id": 103,
@@ -2214,7 +2316,8 @@ const pokemonsList = [
             "Sp. Defense": 75,
             "Speed": 55
         },
-        "image": `${process.env.API_URL}/assets/pokemons/103.png`
+        "image": `${process.env.API_URL}/assets/pokemons/103.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/103.png`
     },
     {
         "id": 104,
@@ -2235,7 +2338,8 @@ const pokemonsList = [
             "Sp. Defense": 50,
             "Speed": 35
         },
-        "image": `${process.env.API_URL}/assets/pokemons/104.png`
+        "image": `${process.env.API_URL}/assets/pokemons/104.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/104.png`
     },
     {
         "id": 105,
@@ -2256,7 +2360,8 @@ const pokemonsList = [
             "Sp. Defense": 80,
             "Speed": 45
         },
-        "image": `${process.env.API_URL}/assets/pokemons/105.png`
+        "image": `${process.env.API_URL}/assets/pokemons/105.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/105.png`
     },
     {
         "id": 106,
@@ -2277,7 +2382,8 @@ const pokemonsList = [
             "Sp. Defense": 110,
             "Speed": 87
         },
-        "image": `${process.env.API_URL}/assets/pokemons/106.png`
+        "image": `${process.env.API_URL}/assets/pokemons/106.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/106.png`
     },
     {
         "id": 107,
@@ -2298,7 +2404,8 @@ const pokemonsList = [
             "Sp. Defense": 110,
             "Speed": 76
         },
-        "image": `${process.env.API_URL}/assets/pokemons/107.png`
+        "image": `${process.env.API_URL}/assets/pokemons/107.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/107.png`
     },
     {
         "id": 108,
@@ -2319,7 +2426,8 @@ const pokemonsList = [
             "Sp. Defense": 75,
             "Speed": 30
         },
-        "image": `${process.env.API_URL}/assets/pokemons/108.png`
+        "image": `${process.env.API_URL}/assets/pokemons/108.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/108.png`
     },
     {
         "id": 109,
@@ -2340,7 +2448,8 @@ const pokemonsList = [
             "Sp. Defense": 45,
             "Speed": 35
         },
-        "image": `${process.env.API_URL}/assets/pokemons/109.png`
+        "image": `${process.env.API_URL}/assets/pokemons/109.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/109.png`
     },
     {
         "id": 110,
@@ -2361,7 +2470,8 @@ const pokemonsList = [
             "Sp. Defense": 70,
             "Speed": 60
         },
-        "image": `${process.env.API_URL}/assets/pokemons/110.png`
+        "image": `${process.env.API_URL}/assets/pokemons/110.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/110.png`
     },
     {
         "id": 111,
@@ -2383,7 +2493,8 @@ const pokemonsList = [
             "Sp. Defense": 30,
             "Speed": 25
         },
-        "image": `${process.env.API_URL}/assets/pokemons/111.png`
+        "image": `${process.env.API_URL}/assets/pokemons/111.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/111.png`
     },
     {
         "id": 112,
@@ -2405,7 +2516,8 @@ const pokemonsList = [
             "Sp. Defense": 45,
             "Speed": 40
         },
-        "image": `${process.env.API_URL}/assets/pokemons/112.png`
+        "image": `${process.env.API_URL}/assets/pokemons/112.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/112.png`
     },
     {
         "id": 113,
@@ -2426,7 +2538,8 @@ const pokemonsList = [
             "Sp. Defense": 105,
             "Speed": 50
         },
-        "image": `${process.env.API_URL}/assets/pokemons/113.png`
+        "image": `${process.env.API_URL}/assets/pokemons/113.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/113.png`
     },
     {
         "id": 114,
@@ -2447,7 +2560,8 @@ const pokemonsList = [
             "Sp. Defense": 40,
             "Speed": 60
         },
-        "image": `${process.env.API_URL}/assets/pokemons/114.png`
+        "image": `${process.env.API_URL}/assets/pokemons/114.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/114.png`
     },
     {
         "id": 115,
@@ -2468,7 +2582,8 @@ const pokemonsList = [
             "Sp. Defense": 80,
             "Speed": 90
         },
-        "image": `${process.env.API_URL}/assets/pokemons/115.png`
+        "image": `${process.env.API_URL}/assets/pokemons/115.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/115.png`
     },
     {
         "id": 116,
@@ -2489,7 +2604,8 @@ const pokemonsList = [
             "Sp. Defense": 25,
             "Speed": 60
         },
-        "image": `${process.env.API_URL}/assets/pokemons/116.png`
+        "image": `${process.env.API_URL}/assets/pokemons/116.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/116.png`
     },
     {
         "id": 117,
@@ -2510,7 +2626,8 @@ const pokemonsList = [
             "Sp. Defense": 45,
             "Speed": 85
         },
-        "image": `${process.env.API_URL}/assets/pokemons/117.png`
+        "image": `${process.env.API_URL}/assets/pokemons/117.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/117.png`
     },
     {
         "id": 118,
@@ -2531,7 +2648,8 @@ const pokemonsList = [
             "Sp. Defense": 50,
             "Speed": 63
         },
-        "image": `${process.env.API_URL}/assets/pokemons/118.png`
+        "image": `${process.env.API_URL}/assets/pokemons/118.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/118.png`
     },
     {
         "id": 119,
@@ -2552,7 +2670,8 @@ const pokemonsList = [
             "Sp. Defense": 80,
             "Speed": 68
         },
-        "image": `${process.env.API_URL}/assets/pokemons/119.png`
+        "image": `${process.env.API_URL}/assets/pokemons/119.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/119.png`
     },
     {
         "id": 120,
@@ -2573,7 +2692,8 @@ const pokemonsList = [
             "Sp. Defense": 55,
             "Speed": 85
         },
-        "image": `${process.env.API_URL}/assets/pokemons/120.png`
+        "image": `${process.env.API_URL}/assets/pokemons/120.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/120.png`
     },
     {
         "id": 121,
@@ -2595,7 +2715,8 @@ const pokemonsList = [
             "Sp. Defense": 85,
             "Speed": 115
         },
-        "image": `${process.env.API_URL}/assets/pokemons/121.png`
+        "image": `${process.env.API_URL}/assets/pokemons/121.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/121.png`
     },
     {
         "id": 122,
@@ -2617,7 +2738,8 @@ const pokemonsList = [
             "Sp. Defense": 120,
             "Speed": 90
         },
-        "image": `${process.env.API_URL}/assets/pokemons/122.png`
+        "image": `${process.env.API_URL}/assets/pokemons/122.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/122.png`
     },
     {
         "id": 123,
@@ -2639,7 +2761,8 @@ const pokemonsList = [
             "Sp. Defense": 80,
             "Speed": 105
         },
-        "image": `${process.env.API_URL}/assets/pokemons/123.png`
+        "image": `${process.env.API_URL}/assets/pokemons/123.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/123.png`
     },
     {
         "id": 124,
@@ -2661,7 +2784,8 @@ const pokemonsList = [
             "Sp. Defense": 95,
             "Speed": 95
         },
-        "image": `${process.env.API_URL}/assets/pokemons/124.png`
+        "image": `${process.env.API_URL}/assets/pokemons/124.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/124.png`
     },
     {
         "id": 125,
@@ -2682,7 +2806,8 @@ const pokemonsList = [
             "Sp. Defense": 85,
             "Speed": 105
         },
-        "image": `${process.env.API_URL}/assets/pokemons/125.png`
+        "image": `${process.env.API_URL}/assets/pokemons/125.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/125.png`
     },
     {
         "id": 126,
@@ -2703,7 +2828,8 @@ const pokemonsList = [
             "Sp. Defense": 85,
             "Speed": 93
         },
-        "image": `${process.env.API_URL}/assets/pokemons/126.png`
+        "image": `${process.env.API_URL}/assets/pokemons/126.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/126.png`
     },
     {
         "id": 127,
@@ -2724,7 +2850,8 @@ const pokemonsList = [
             "Sp. Defense": 70,
             "Speed": 85
         },
-        "image": `${process.env.API_URL}/assets/pokemons/127.png`
+        "image": `${process.env.API_URL}/assets/pokemons/127.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/127.png`
     },
     {
         "id": 128,
@@ -2745,7 +2872,8 @@ const pokemonsList = [
             "Sp. Defense": 70,
             "Speed": 110
         },
-        "image": `${process.env.API_URL}/assets/pokemons/128.png`
+        "image": `${process.env.API_URL}/assets/pokemons/128.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/128.png`
     },
     {
         "id": 129,
@@ -2766,7 +2894,8 @@ const pokemonsList = [
             "Sp. Defense": 20,
             "Speed": 80
         },
-        "image": `${process.env.API_URL}/assets/pokemons/129.png`
+        "image": `${process.env.API_URL}/assets/pokemons/129.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/129.png`
     },
     {
         "id": 130,
@@ -2788,7 +2917,8 @@ const pokemonsList = [
             "Sp. Defense": 100,
             "Speed": 81
         },
-        "image": `${process.env.API_URL}/assets/pokemons/130.png`
+        "image": `${process.env.API_URL}/assets/pokemons/130.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/130.png`
     },
     {
         "id": 131,
@@ -2810,7 +2940,8 @@ const pokemonsList = [
             "Sp. Defense": 95,
             "Speed": 60
         },
-        "image": `${process.env.API_URL}/assets/pokemons/131.png`
+        "image": `${process.env.API_URL}/assets/pokemons/131.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/131.png`
     },
     {
         "id": 132,
@@ -2831,7 +2962,8 @@ const pokemonsList = [
             "Sp. Defense": 48,
             "Speed": 48
         },
-        "image": `${process.env.API_URL}/assets/pokemons/132.png`
+        "image": `${process.env.API_URL}/assets/pokemons/132.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/132.png`
     },
     {
         "id": 133,
@@ -2852,7 +2984,8 @@ const pokemonsList = [
             "Sp. Defense": 65,
             "Speed": 55
         },
-        "image": `${process.env.API_URL}/assets/pokemons/133.png`
+        "image": `${process.env.API_URL}/assets/pokemons/133.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/133.png`
     },
     {
         "id": 134,
@@ -2873,7 +3006,8 @@ const pokemonsList = [
             "Sp. Defense": 95,
             "Speed": 65
         },
-        "image": `${process.env.API_URL}/assets/pokemons/134.png`
+        "image": `${process.env.API_URL}/assets/pokemons/134.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/134.png`
     },
     {
         "id": 135,
@@ -2894,7 +3028,8 @@ const pokemonsList = [
             "Sp. Defense": 95,
             "Speed": 130
         },
-        "image": `${process.env.API_URL}/assets/pokemons/135.png`
+        "image": `${process.env.API_URL}/assets/pokemons/135.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/135.png`
     },
     {
         "id": 136,
@@ -2915,7 +3050,8 @@ const pokemonsList = [
             "Sp. Defense": 110,
             "Speed": 65
         },
-        "image": `${process.env.API_URL}/assets/pokemons/136.png`
+        "image": `${process.env.API_URL}/assets/pokemons/136.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/136.png`
     },
     {
         "id": 137,
@@ -2936,7 +3072,8 @@ const pokemonsList = [
             "Sp. Defense": 75,
             "Speed": 40
         },
-        "image": `${process.env.API_URL}/assets/pokemons/137.png`
+        "image": `${process.env.API_URL}/assets/pokemons/137.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/137.png`
     },
     {
         "id": 138,
@@ -2958,7 +3095,8 @@ const pokemonsList = [
             "Sp. Defense": 55,
             "Speed": 35
         },
-        "image": `${process.env.API_URL}/assets/pokemons/138.png`
+        "image": `${process.env.API_URL}/assets/pokemons/138.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/138.png`
     },
     {
         "id": 139,
@@ -2980,7 +3118,8 @@ const pokemonsList = [
             "Sp. Defense": 70,
             "Speed": 55
         },
-        "image": `${process.env.API_URL}/assets/pokemons/139.png`
+        "image": `${process.env.API_URL}/assets/pokemons/139.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/139.png`
     },
     {
         "id": 140,
@@ -3002,7 +3141,8 @@ const pokemonsList = [
             "Sp. Defense": 45,
             "Speed": 55
         },
-        "image": `${process.env.API_URL}/assets/pokemons/140.png`
+        "image": `${process.env.API_URL}/assets/pokemons/140.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/140.png`
     },
     {
         "id": 141,
@@ -3024,7 +3164,8 @@ const pokemonsList = [
             "Sp. Defense": 70,
             "Speed": 80
         },
-        "image": `${process.env.API_URL}/assets/pokemons/141.png`
+        "image": `${process.env.API_URL}/assets/pokemons/141.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/141.png`
     },
     {
         "id": 142,
@@ -3046,7 +3187,8 @@ const pokemonsList = [
             "Sp. Defense": 75,
             "Speed": 130
         },
-        "image": `${process.env.API_URL}/assets/pokemons/142.png`
+        "image": `${process.env.API_URL}/assets/pokemons/142.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/142.png`
     },
     {
         "id": 143,
@@ -3067,7 +3209,8 @@ const pokemonsList = [
             "Sp. Defense": 110,
             "Speed": 30
         },
-        "image": `${process.env.API_URL}/assets/pokemons/143.png`
+        "image": `${process.env.API_URL}/assets/pokemons/143.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/143.png`
     },
     {
         "id": 144,
@@ -3089,7 +3232,8 @@ const pokemonsList = [
             "Sp. Defense": 125,
             "Speed": 85
         },
-        "image": `${process.env.API_URL}/assets/pokemons/144.png`
+        "image": `${process.env.API_URL}/assets/pokemons/144.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/144.png`
     },
     {
         "id": 145,
@@ -3111,7 +3255,8 @@ const pokemonsList = [
             "Sp. Defense": 90,
             "Speed": 100
         },
-        "image": `${process.env.API_URL}/assets/pokemons/145.png`
+        "image": `${process.env.API_URL}/assets/pokemons/145.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/145.png`
     },
     {
         "id": 146,
@@ -3133,7 +3278,8 @@ const pokemonsList = [
             "Sp. Defense": 85,
             "Speed": 90
         },
-        "image": `${process.env.API_URL}/assets/pokemons/146.png`
+        "image": `${process.env.API_URL}/assets/pokemons/146.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/146.png`
     },
     {
         "id": 147,
@@ -3154,7 +3300,8 @@ const pokemonsList = [
             "Sp. Defense": 50,
             "Speed": 50
         },
-        "image": `${process.env.API_URL}/assets/pokemons/147.png`
+        "image": `${process.env.API_URL}/assets/pokemons/147.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/147.png`
     },
     {
         "id": 148,
@@ -3175,7 +3322,8 @@ const pokemonsList = [
             "Sp. Defense": 70,
             "Speed": 70
         },
-        "image": `${process.env.API_URL}/assets/pokemons/148.png`
+        "image": `${process.env.API_URL}/assets/pokemons/148.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/148.png`
     },
     {
         "id": 149,
@@ -3197,7 +3345,8 @@ const pokemonsList = [
             "Sp. Defense": 100,
             "Speed": 80
         },
-        "image": `${process.env.API_URL}/assets/pokemons/149.png`
+        "image": `${process.env.API_URL}/assets/pokemons/149.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/149.png`
     },
     {
         "id": 150,
@@ -3218,7 +3367,8 @@ const pokemonsList = [
             "Sp. Defense": 90,
             "Speed": 130
         },
-        "image": `${process.env.API_URL}/assets/pokemons/150.png`
+        "image": `${process.env.API_URL}/assets/pokemons/150.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/150.png`
     },
     {
         "id": 151,
@@ -3239,7 +3389,8 @@ const pokemonsList = [
             "Sp. Defense": 100,
             "Speed": 100
         },
-        "image": `${process.env.API_URL}/assets/pokemons/151.png`
+        "image": `${process.env.API_URL}/assets/pokemons/151.png`,
+        "imageShiny": `${process.env.API_URL}/assets/pokemons/shiny/151.png`
     }
 ]
 
