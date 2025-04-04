@@ -1,5 +1,5 @@
 import Users from "../models/usersSchema.js";
-import bcrypt from "bcrypt";
+import bcrypt from 'bcrypt';
 
 
 // 🔹 Récupérer tous les users
@@ -24,7 +24,6 @@ export const createUser = async (req, res) => {
     try {
         const { username, password } = req.body;
 
-        // Vérifier si l'utilisateur existe déjà
         const existingUser = await Users.findOne({ username });
         if (existingUser) {
             return res.status(400).json({
@@ -33,14 +32,9 @@ export const createUser = async (req, res) => {
             });
         }
 
-        // Hasher le mot de passe
-        const salt = await bcrypt.genSalt(10);
-        const hashedPassword = await bcrypt.hash(password, salt);
-
-        // Créer le nouvel utilisateur
         const newUser = new Users({
             username,
-            password: hashedPassword
+            password: password
         });
 
         await newUser.save();
@@ -53,12 +47,51 @@ export const createUser = async (req, res) => {
                 username: newUser.username
             }
         });
-
     } catch (error) {
         console.error("Erreur lors de la création de l'utilisateur:", error);
         res.status(500).json({
             status: 500,
             message: "Erreur lors de la création de l'utilisateur"
+        });
+    }
+};
+
+export const login = async (req, res) => {
+    try {
+        const { username, password } = req.body;
+        
+        // Recherche de l'utilisateur
+        const user = await Users.findOne({ username });
+        
+        if (!user) {
+            return res.status(401).json({
+                status: 401,
+                message: "Nom d'utilisateur ou mot de passe incorrect"
+            });
+        }
+
+        // Vérification du mot de passe (sans bcrypt pour l'instant puisque register ne l'utilise pas)
+        if (password !== user.password) {
+            return res.status(401).json({
+                status: 401,
+                message: "Nom d'utilisateur ou mot de passe incorrect"
+            });
+        }
+
+        // Format de réponse identique au register
+        res.status(200).json({
+            status: 200,
+            message: "Connexion réussie",
+            user: {
+                _id: user._id,
+                username: user.username
+            }
+        });
+    } catch (error) {
+        console.error("Erreur lors de la connexion:", error);
+        res.status(500).json({
+            status: 500,
+            message: "Erreur lors de la connexion"
         });
     }
 };
